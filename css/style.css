@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navigation {
+    position: relative;
+    width: 1660px;
+    height: 450px;
+    box-sizing: border-box;
+    background-color: black;
+    background-image: url("../images/banner-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Lucida Sans', sans-serif;
+    font-size: 40px;
+    color: white;
+}
+
+.navigation-logo {
+    width: 180px;
+    height: 40px;
+    background-image: url("../svg/noemi-logo.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 250px;
+    top: 30px;
+}
+
+.navigation-list {
+    display: flex;
+    width: 460px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    font-size: 12px;
+    list-style-type: none;
+    padding-inline-start: 0px;
+    
+}
+
+.menu-item {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navigation-menu {
+    position: absolute;
+    right: 250px;
+    top: 30px;
+}
+
+.navigation-title {
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
