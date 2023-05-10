@@ -24,6 +24,9 @@ body {
 
 main {
     width: 1660px;
+    font-family: OpenSans, Arial, sans-serif;
+    color: white;
+    text-transform: uppercase;
 }
 
 .navigation {
@@ -36,12 +39,9 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
 
-    text-transform: uppercase;
     text-align: center;
-    font-family: OpenSans, Arial, sans-serif;
     font-weight: 700;
     font-size: 45px;
-    color: white;
     z-index: 0;
 }
 
@@ -87,16 +87,71 @@ main {
     line-height: 75px;
 }
 
-h3 {
+.content-title {
     text-align: center;
-    text-transform: uppercase;
 }
+
+h3 {
+    color: black;
+    font-size: 20px;
+    margin: 50px 0px 10px;
+
+}
+
+.line {
+    display: inline-block;
+    width: 65px;
+    height: 3px;
+    background-color: #dfd8bf;
+    margin-bottom: 25px;
+} 
 
 .content-trend {
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
-.trend-post-img {
+.trend-post {
+    position: relative;
+}
+
+.trend-post::before {
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.trend-post img {
+    display: block;
     width: 410px;
+    object-fit: cover;
+}
+
+.trend-text {
+    position: absolute;
+    padding: 38px 32px;
+    font-weight: 700;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    font-size: 20px;
+    border: 4px solid rgba(174, 158, 95, 0.6);
+}
+
+.trend-tags {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+    font-weight: 700;
+    color: #ae9e5f;
+    margin-bottom: 10px;
+}
+
+.trend-tag {
+    margin-right: 20px;
 }
