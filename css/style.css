@@ -78,9 +78,13 @@ main {
     list-style-type: none;    
 }
 
-.menu-item {
-    text-decoration: none;
+.link-item {
+    /* text-decoration: none; */
     color: inherit;
+}
+
+.link-item:hover {
+    color: #71a1f4;
 }
 
 .navigation-title {
@@ -96,6 +100,7 @@ h3 {
     margin-top: 15px;
     color: black;
     font-size: 20px;
+    margin-bottom: 0px;
 }
 
 .line {
@@ -158,18 +163,19 @@ h3 {
 }
 
 .content-posts {
+    margin-top: 60px;
     display: flex;
     justify-content: center;
 }
 
 .posts-news {
-    margin-top: 40px;
+    /* margin-top: 40px; */
     display: flex;
 }
 
 .post {
     display: flex;
-    margin-bottom: 59px;
+    margin-bottom: 60px;
 }
 
 .post-img {
