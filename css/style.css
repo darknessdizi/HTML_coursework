@@ -20,9 +20,6 @@
 
 body {
     margin: 0;
-}
-
-main {
     width: 1660px;
     font-family: OpenSans, Arial, sans-serif;
     color: white;
@@ -38,7 +35,6 @@ main {
     background-image: url("../images/banner-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: 50px;
 
     text-align: center;
     font-weight: 700;
@@ -78,12 +74,16 @@ main {
     list-style-type: none;    
 }
 
-.link-item {
-    /* text-decoration: none; */
+.menu-item {
     color: inherit;
 }
 
-.link-item:hover {
+.link-item {
+    text-decoration: none;
+    color: inherit;
+}
+
+.link-item:hover, .menu-item:hover {
     color: #71a1f4;
 }
 
@@ -92,7 +92,8 @@ main {
     line-height: 75px;
 }
 
-.content-title {
+.trend-title {
+    margin-top: 50px;
     text-align: center;
 }
 
@@ -112,7 +113,7 @@ h3 {
     margin-bottom: 25px;
 } 
 
-.content-trend {
+.trend-content {
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -162,15 +163,10 @@ h3 {
     margin-right: 20px;
 }
 
-.content-posts {
+.posts {
     margin-top: 60px;
     display: flex;
     justify-content: center;
-}
-
-.posts-news {
-    /* margin-top: 40px; */
-    display: flex;
 }
 
 .post {
@@ -207,7 +203,7 @@ p {
     font-size: 15px;
 }
 
-.news {
+.posts-news {
     width: 272px;
     background-color: green;
 }
