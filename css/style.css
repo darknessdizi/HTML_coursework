@@ -92,8 +92,11 @@ body {
     line-height: 75px;
 }
 
-.trend-title {
+.trend {
     margin-top: 50px;
+}
+
+.trend-title, .goods-title {
     text-align: center;
 }
 
@@ -206,4 +209,118 @@ p {
 .posts-news {
     width: 272px;
     background-color: green;
+}
+
+.goods-content {
+    width: 1170px;
+    display: flex;
+    margin: 0px auto;
+    justify-content: space-between;
+}
+
+.good-post {
+    width: 350px;
+    height: 435px;
+    position: relative;
+}
+
+.good-img {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.good-text {
+    min-height: 265px;
+    box-sizing: border-box;
+    position: absolute;
+    padding: 50px 20px 0px 20px;
+    border: 4px solid rgba(174, 158, 95, 0.6);
+    bottom: 0px;
+}
+
+.good-text p {
+    color: black;
+    font-size: 15px;
+    text-transform: none;
+}
+
+.good-text a {
+    color: #ae9e5f;
+}
+
+.good-shop {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.good-price {
+    color: black;
+}
+
+.price-delete {
+    display: block;
+    text-decoration: line-through;
+    font-size: 14px;
+    min-height: 19px;
+}
+
+.price-now {
+    font-size: 20px;
+}
+
+button {
+    color: white;
+    background-color: #ae9e5f;
+    border-color: #ae9e5f;
+    width: 140px;
+    height: 50px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.end-block {
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: none;
+}
+
+.svg-objects {
+    display: flex;
+    justify-content: center;
+    width: 1170px;
+    margin: 65px auto 75px;
+    background-color: #e4e7e6;
+    height: 80px;
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+.object-1 {
+    background-image: url("../svg/001-dribbble.svg");
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+
+.object-2 {
+    background-image: url("../svg/001-pinterest.svg");
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+
+.object-3 {
+    background-image: url("../svg/003-tumblr.svg");
+    width: 20px;
+    height: 20px;
+}
+
+.end-block-text {
+    display: block;
+    margin-bottom: 40px;
 }
