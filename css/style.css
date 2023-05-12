@@ -96,7 +96,7 @@ body {
     margin-top: 50px;
 }
 
-.trend-title, .goods-title {
+.trend-title, .goods-title, .posts-title {
     text-align: center;
 }
 
@@ -105,6 +105,10 @@ h3 {
     color: black;
     font-size: 20px;
     margin-bottom: 0px;
+}
+
+.posts-title h3 {
+    font-size: 14px;
 }
 
 .line {
@@ -208,7 +212,6 @@ p {
 
 .posts-news {
     width: 272px;
-    background-color: green;
 }
 
 .goods-content {
@@ -294,27 +297,27 @@ button {
     justify-content: center;
     width: 1170px;
     margin: 65px auto 75px;
-    background-color: #e4e7e6;
+    background-color: #f5f7f6;
     height: 80px;
     box-sizing: border-box;
     padding: 30px;
 }
 
-.object-1 {
+.svg-dribbble {
     background-image: url("../svg/001-dribbble.svg");
     width: 20px;
     height: 20px;
     margin-right: 20px;
 }
 
-.object-2 {
+.svg-pinterest {
     background-image: url("../svg/001-pinterest.svg");
     width: 20px;
     height: 20px;
     margin-right: 20px;
 }
 
-.object-3 {
+.svg-tumblr {
     background-image: url("../svg/003-tumblr.svg");
     width: 20px;
     height: 20px;
@@ -323,4 +326,65 @@ button {
 .end-block-text {
     display: block;
     margin-bottom: 40px;
+}
+
+.posts-list-item {
+    display: flex;
+    align-items: flex-start;
+    height: 70px;
+    margin-bottom: 20px;
+}
+
+.posts-list-img {
+    width: 70px;
+}
+
+.posts-list-text {
+    padding-left: 15px;
+    padding-right: 5px;
+    position: relative;
+}
+
+.posts-list-text span {
+    color: #a0a0a0;
+    text-transform: none;
+    font-size: 12px;
+    position: absolute;
+    margin-top: -4px;
+}
+
+h4 {
+    font-size: 14px;
+    color: black;
+    margin-top: 15px;
+    line-height: 1.2;
+}
+
+.posts-link  {
+    text-decoration: none;
+}
+
+.posts-link:hover h4 {
+    color: #71a1f4;
+} 
+
+.btn-search {
+    display: flex;
+}
+
+.btn-search input {
+    width: calc(100% - 45px);
+    padding-left: 20px;
+}
+
+.svg-search {
+    background-image: url("../svg/search.svg");
+    width: 45px;
+    height: 45px;
+    background-color: #ae9e5f;
+    padding: 15px;
+    box-sizing: border-box;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
