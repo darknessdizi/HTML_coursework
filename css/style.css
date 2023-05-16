@@ -20,7 +20,6 @@
 
 body {
     margin: 0;
-    width: 1660px;
     font-family: OpenSans, Arial, sans-serif;
     color: white;
     text-transform: uppercase;
@@ -28,7 +27,7 @@ body {
 
 .navigation {
     position: relative;
-    padding: 30px 245px 0px 250px;
+    padding: 30px 14.7% 0px 15%;
     height: 450px;
     box-sizing: border-box;
     background-color: black;
@@ -71,20 +70,16 @@ body {
     justify-content: space-between;
     font-size: 13px;
     font-weight: 400;
-    list-style-type: none;    
+    list-style-type: none; 
 }
 
-.menu-item {
+.menu-item, .link-item {
     color: inherit;
-}
-
-.link-item {
     text-decoration: none;
-    color: inherit;
 }
 
-.link-item:hover, .menu-item:hover {
-    color: #71a1f4;
+.menu-item:hover {
+    text-decoration: underline;
 }
 
 .navigation-title {
