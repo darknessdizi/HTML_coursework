@@ -209,6 +209,12 @@ p {
     width: 272px;
 }
 
+
+
+
+
+
+
 .goods-content {
     width: 1170px;
     display: flex;
@@ -326,6 +332,8 @@ button:hover {
     display: block;
     margin-bottom: 40px;
 }
+
+
 
 .posts-list-item {
     display: flex;
