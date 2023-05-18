@@ -28,7 +28,7 @@ body {
 .navigation {
     position: relative;
     padding: 30px 15% 0px 15%;
-    min-width: 960px;
+    min-width: 985px;
     height: 450px;
     box-sizing: border-box;
     background-color: black;
@@ -103,7 +103,7 @@ h1 {
 }
 
 h3 {
-    margin-top: 15px;
+    /* margin-top: 15px; */
     color: black;
     font-size: 20px;
     margin-bottom: 0px;
@@ -165,20 +165,30 @@ h3 {
     position: absolute;
     padding: 10.55% 8.88%;
     font-weight: 700;
+    font-size: 14px;
+    /* font-size: 1.1vw; */
+    /* font-size: calc(9px + 0.6vw); */
+
     left: 4.87%;
     right: 4.87%;
     bottom: 4.87%;
-    font-size: 1.1vw;
-    /* font-size: calc(9px + 0.6vw); */
     border: 4px solid rgba(174, 158, 95, 0.6);
+}
+
+.trend-text h3 {
+    margin-top: 0px;
+    color: inherit;
+    font-size: 1.1vw;
+    /* font-size: 20px; */
 }
 
 .tags {
     display: flex;
     flex-wrap: wrap;
     /* font-size: 14px; */
-    font-size: 0.84vw;
     /* font-size: calc(6px + 0.48vw); */
+    font-size: 0.84vw;
+
     font-weight: 700;
     color: #ae9e5f;
     margin-bottom: 10px;
