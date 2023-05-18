@@ -383,11 +383,11 @@ h4 {
     width: 45px;
     height: 45px;
     background-color: #ae9e5f;
-    padding: 15px;
-    box-sizing: border-box;
+    padding: 5px;
     background-size: 40%;
     background-repeat: no-repeat;
-    background-position: center;    
+    background-position: center;
+    border: none;    
 }
 
 .btn-mail {
@@ -397,18 +397,12 @@ h4 {
     margin-top: 15px;
     font-weight: bold;
     font-size: 14px;
-    text-align: center;
-    padding: 15px 0px 15px;
-    box-sizing: border-box;
-    line-height: 1;
-}
-
-.link-btn {
-    text-decoration: none;
+    border: none;
     color: inherit;
+    text-transform: uppercase;
 }
 
-.link-btn:hover {
+.btn-search:hover, .btn-mail:hover {
     opacity: 0.9;
 }
 
