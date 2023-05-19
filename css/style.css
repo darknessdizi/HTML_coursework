@@ -107,7 +107,7 @@ h1 {
 h3 {
     color: black;
     font-size: 20px;
-    margin-bottom: 0px;
+    margin: 0px;
 }
 
 .posts-news-title h3 {
@@ -257,10 +257,14 @@ hr {
 .posts {
     display: flex;
     justify-content: center;
-    width: 70.48%;
+    width: 74%;
     margin: 60px auto 0px;
 }
 
+.posts-content {
+    width: 77%;
+    min-width: 570px;
+}
 
 .post {
     display: flex;
@@ -268,7 +272,7 @@ hr {
 }
 
 .post-img {
-    width: 42.36%;
+    width: 42.22%;
     min-width: 212px;
 }
 
@@ -279,7 +283,7 @@ hr {
 }
 
 .post-block {
-    width: 57.64%;
+    width: 57.78%;
     min-width: 289.113px;
     padding-left: 3.34%;
     padding-right: 13.37%;
@@ -313,38 +317,37 @@ p {
 
 
 .posts-news {
-    width: 272px;
+    width: 23%;
+    /* width: 272px; */
 }
 
 .posts-list-item {
     display: flex;
     align-items: flex-start;
-    height: 70px;
+    height: 5em;
     margin-bottom: 20px;
 }
 
 .posts-list-img {
-    width: 70px;
+    width: 25.92%;
+    height: 100%;
 }
 
 .posts-list-text {
-    padding-left: 15px;
-    padding-right: 5px;
-    position: relative;
+    padding-left: 5.5%;
 }
 
 .posts-list-text span {
     color: #a0a0a0;
     text-transform: none;
-    font-size: 12px;
-    position: absolute;
-    margin-top: -4px;
+    font-size: 0.75vw;
 }
 
 h4 {
-    font-size: 14px;
+    font-size: 0.875vw;
     color: black;
-    margin-top: 15px;
+    margin-top: 5px;
+    margin-bottom: 0px;
     line-height: 1.2;
 }
 
