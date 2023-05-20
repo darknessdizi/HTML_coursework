@@ -23,13 +23,14 @@ body {
     font-family: OpenSans, Arial, sans-serif;
     color: white;
     text-transform: uppercase;
+    font-size: 1.25vw;
 }
 
 .navigation {
     position: relative;
-    padding: 30px 15% 0px 15%;
+    padding: 1.5em 12.25em 0px 12.25em;
     min-width: 985px;
-    height: 450px;
+    height: 22.5em;
     box-sizing: border-box;
     background-color: black;
     background-image: url("../images/banner-bg.jpg");
@@ -54,23 +55,23 @@ body {
 .navigation-content {
     display: flex;
     justify-content: space-between;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     align-items: center;
     margin: 0px auto;
 }
 
 .navigation-logo {
-    width: 178px;
-    height: 40px;
+    width: 9em;
+    height: 2em;
     background-image: url("../svg/noemi-logo.svg");
     background-repeat: no-repeat;
 }
 
 .navigation-list {
     display: flex;
-    width: 462px;
+    width: 35.51em;
     justify-content: space-between;
-    font-size: 13px;
+    font-size: 0.81vw;
     font-weight: 400;
     list-style-type: none; 
     margin: 0px;
@@ -91,13 +92,13 @@ body {
 }
 
 h1 {
-    font-size: 45px;
+    font-size: 2.81vw;
     margin-block-start: 2em;
     margin-block-end: 0px;
 }
 
 .trend {
-    margin-top: 50px;
+    margin-top: 2.5em;
 }
 
 .title-line {
@@ -106,20 +107,20 @@ h1 {
 
 h3 {
     color: black;
-    font-size: 20px;
+    font-size: 1.25vw;
     margin: 0px;
 }
 
 .posts-news-title h3 {
-    font-size: 14px;
+    font-size: 0.875vw;
 }
 
 hr {
-    margin-top: 10px;
-    margin-bottom: 25px;
+    margin-top: 0.5em;
+    margin-bottom: 1.25em;
     border-style: solid;
-    border-width: 3px 0px 0px;
-    width: 65px;  
+    border-width: 0.15em 0px 0px;
+    width: 3.25em;  
     color: #dfd8bf; 
 }
 
@@ -166,14 +167,14 @@ hr {
     position: absolute;
     padding: 10.55% 8.88%;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 0.875vw;
     /* font-size: 1.1vw; */
     /* font-size: calc(9px + 0.6vw); */
 
     left: 4.87%;
     right: 4.87%;
     bottom: 4.87%;
-    border: 4px solid rgba(174, 158, 95, 0.6);
+    border: 0.28em solid rgba(174, 158, 95, 0.6);
 }
 
 .trend-text h3 {
@@ -191,11 +192,11 @@ hr {
     padding: 0px;
     /* font-size: 14px; */
     /* font-size: calc(6px + 0.48vw); */
-    font-size: 0.84vw;
+    font-size: 0.875vw;
 
     font-weight: 700;
     color: #ae9e5f;
-    margin-bottom: 10px;
+    margin-bottom: 0.71em;
 }
 
 .tag-link, .tag {
@@ -209,7 +210,7 @@ hr {
 
 .end-block {
     color: black;
-    font-size: 12px;
+    font-size: 0.75vw;
     font-weight: bold;
     text-align: center;
     text-transform: none;
@@ -219,37 +220,37 @@ hr {
     display: flex;
     justify-content: center;
     /* width: 1170px; */
-    width: 70.48%;
-    margin: 65px auto 75px;
+    width: 74%;
+    margin: 0px auto 5.81em;
     background-color: #f5f7f6;
-    height: 80px;
+    height: 6.66em;
     box-sizing: border-box;
-    padding: 30px;
+    padding: 2.5em;
 }
 
 .svg-dribbble {
     background-image: url("../svg/001-dribbble.svg");
-    width: 20px;
-    height: 20px;
-    margin-right: 20px;
+    width: 1.66em;
+    height: 1.66em;
+    margin-right: 1.66em;
 }
 
 .svg-pinterest {
     background-image: url("../svg/001-pinterest.svg");
-    width: 20px;
-    height: 20px;
-    margin-right: 20px;
+    width: 1.66em;
+    height: 1.66em;
+    margin-right: 1.66em;
 }
 
 .svg-tumblr {
     background-image: url("../svg/003-tumblr.svg");
-    width: 20px;
-    height: 20px;
+    width: 1.66em;
+    height: 1.66em;
 }
 
 .end-block-text {
     display: block;
-    margin-bottom: 40px;
+    margin-bottom: 3.33em;
 }
 
 /* первая колонка */
@@ -258,7 +259,7 @@ hr {
     display: flex;
     justify-content: center;
     width: 74%;
-    margin: 60px auto 0px;
+    margin: 3em auto 0px;
 }
 
 .posts-content {
@@ -268,7 +269,7 @@ hr {
 
 .post {
     display: flex;
-    margin-bottom: 60px;
+    margin-bottom: 3em;
 }
 
 .post-img {
@@ -284,7 +285,7 @@ hr {
 
 .post-block {
     width: 57.78%;
-    min-width: 289.113px;
+    min-width: 289px;
     padding-left: 3.34%;
     padding-right: 13.37%;
     box-sizing: border-box;
@@ -318,37 +319,40 @@ p {
 
 .posts-news {
     width: 23%;
-    /* width: 272px; */
+    min-width: 270px;
 }
 
 .posts-list-item {
     display: flex;
-    align-items: flex-start;
-    height: 5em;
-    margin-bottom: 20px;
+    margin-bottom: 1.25em;
 }
 
 .posts-list-img {
-    width: 25.92%;
+    width: 25%;
     height: 100%;
 }
 
 .posts-list-text {
     padding-left: 5.5%;
+    box-sizing: border-box;
+    width: 75%;
+    margin-top: -4px;
 }
 
 .posts-list-text span {
     color: #a0a0a0;
     text-transform: none;
     font-size: 0.75vw;
+    /* font-size: 12px; */
 }
 
 h4 {
     font-size: 0.875vw;
+    /* font-size: 14px; */
     color: black;
-    margin-top: 5px;
+    margin-top: 0.14em;
     margin-bottom: 0px;
-    line-height: 1.2;
+    line-height: 1;
 }
 
 .posts-link  {
@@ -361,49 +365,51 @@ h4 {
 
 .content-search {
     display: flex;
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 3em;
+    margin-bottom: 3em;
 }
 
 .field {
-    padding-left: 20px;
+    padding-left: 8.8%;
     border: none;
     background-color: #f5f7f6;
+    font-size: 0.81vw;
 }
 
 .field-search {
-    width: calc(100% - 45px);
+    width: calc(100% - 3.4em);
 }
 
 .field-search:focus {
-    margin-right: 1px;
+    margin-right: 0.07em;
 }
 
 .field-mail {
     width: 100%;
-    height: 45px;
+    height: 3.4em;
     box-sizing: border-box;
 }
 
 .btn-search {
     background-image: url("../svg/search.svg");
-    width: 45px;
-    height: 45px;
+    width: 3.4em;
+    height: 3.4em;
     background-color: #ae9e5f;
-    padding: 5px;
+    padding: 0.38em;
     background-size: 40%;
     background-repeat: no-repeat;
     background-position: center;
-    border: none;    
+    border: none;  
+    font-size: 0.81vw;  
 }
 
 .btn-mail {
     background-color: #ae9e5f;
     width: 100%;
-    height: 45px;
-    margin-top: 15px;
+    height: 3.4em;
+    margin-top: 1.07em;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 0.87vw;
     border: none;
     color: inherit;
     text-transform: uppercase;
@@ -414,15 +420,15 @@ h4 {
 }
 
 .content-mail, .content-tags {
-    margin-bottom: 60px;
+    margin-bottom: 3em;
 }
 
 .content-tags span {
     color: black;
-    font-size: 12px;
+    font-size: 0.75vw;
     font-weight: bold;
-    border: 3px solid #ededed;
-    padding: 5px 15px;
+    border: 0.25em solid #ededed;
+    padding: 0.41em 1.25em;
     display: inline-block;
-    margin-top: 5px;
+    margin-top: 0.41em;
 }
