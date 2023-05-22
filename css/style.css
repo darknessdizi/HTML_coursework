@@ -1,4 +1,4 @@
-@font-face {
+﻿@font-face {
     font-family: 'OpenSans';
     src: local("Gentium"), url('../fonts/OpenSans-Bold.woff2') format("woff2"), 
     url('../fonts/OpenSans-Bold.woff') format("woff"), 
@@ -23,14 +23,13 @@ body {
     font-family: OpenSans, Arial, sans-serif;
     color: white;
     text-transform: uppercase;
-    font-size: 1.25vw;
 }
 
 .navigation {
     position: relative;
-    padding: 1.5em 12.25em 0px 12.25em;
+    padding: 30px 15% 0px;
     min-width: 985px;
-    height: 22.5em;
+    height: 450px;
     box-sizing: border-box;
     background-color: black;
     background-image: url("../images/banner-bg.jpg");
@@ -55,23 +54,23 @@ body {
 .navigation-content {
     display: flex;
     justify-content: space-between;
-    /* max-width: 1200px; */
+    max-width: 1200px;
     align-items: center;
     margin: 0px auto;
 }
 
 .navigation-logo {
-    width: 9em;
-    height: 2em;
+    width: 178px;
+    height: 40px;
     background-image: url("../svg/noemi-logo.svg");
     background-repeat: no-repeat;
 }
 
 .navigation-list {
     display: flex;
-    width: 35.51em;
+    width: 462px;
     justify-content: space-between;
-    font-size: 0.81vw;
+    font-size: 13px;
     font-weight: 400;
     list-style-type: none; 
     margin: 0px;
@@ -92,13 +91,13 @@ body {
 }
 
 h1 {
-    font-size: 2.81vw;
-    margin-block-start: 2em;
+    font-size: 45px;
+    margin-block-start: 100px;
     margin-block-end: 0px;
 }
 
 .trend {
-    margin-top: 2.5em;
+    margin-top: 50px;
 }
 
 .title-line {
@@ -107,20 +106,20 @@ h1 {
 
 h3 {
     color: black;
-    font-size: 1.25vw;
+    font-size: 20px;
     margin: 0px;
 }
 
 .posts-news-title h3 {
-    font-size: 0.875vw;
+    font-size: 14px;
 }
 
 hr {
-    margin-top: 0.5em;
-    margin-bottom: 1.25em;
+    margin-top: 10px;
+    margin-bottom: 25px;
     border-style: solid;
-    border-width: 0.15em 0px 0px;
-    width: 3.25em;  
+    border-width: 3px 0px 0px;
+    width: 65px;  
     color: #dfd8bf; 
 }
 
@@ -167,14 +166,14 @@ hr {
     position: absolute;
     padding: 10.55% 8.88%;
     font-weight: 700;
-    font-size: 0.875vw;
+    font-size: 14px;
     /* font-size: 1.1vw; */
     /* font-size: calc(9px + 0.6vw); */
 
     left: 4.87%;
     right: 4.87%;
     bottom: 4.87%;
-    border: 0.28em solid rgba(174, 158, 95, 0.6);
+    border: 4px solid rgba(174, 158, 95, 0.6);
 }
 
 .trend-text h3 {
@@ -196,7 +195,7 @@ hr {
 
     font-weight: 700;
     color: #ae9e5f;
-    margin-bottom: 0.71em;
+    margin: 0px 0px 10px;
 }
 
 .tag-link, .tag {
@@ -210,7 +209,7 @@ hr {
 
 .end-block {
     color: black;
-    font-size: 0.75vw;
+    font-size: 12px;
     font-weight: bold;
     text-align: center;
     text-transform: none;
@@ -221,18 +220,18 @@ hr {
     justify-content: center;
     /* width: 1170px; */
     width: 74%;
-    margin: 0px auto 5.81em;
+    margin: 0px auto 70px;
     background-color: #f5f7f6;
-    height: 6.66em;
+    height: 80px;
     box-sizing: border-box;
-    padding: 2.5em;
+    padding: 30px;
 }
 
 .svg-dribbble {
     background-image: url("../svg/001-dribbble.svg");
-    width: 1.66em;
-    height: 1.66em;
-    margin-right: 1.66em;
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
 }
 
 .svg-pinterest {
@@ -244,13 +243,13 @@ hr {
 
 .svg-tumblr {
     background-image: url("../svg/003-tumblr.svg");
-    width: 1.66em;
-    height: 1.66em;
+    width: 20px;
+    height: 20px;
 }
 
 .end-block-text {
     display: block;
-    margin-bottom: 3.33em;
+    margin-bottom: 40px;
 }
 
 /* первая колонка */
@@ -259,7 +258,7 @@ hr {
     display: flex;
     justify-content: center;
     width: 74%;
-    margin: 3em auto 0px;
+    margin: 60px auto 0px;
 }
 
 .posts-content {
@@ -269,7 +268,7 @@ hr {
 
 .post {
     display: flex;
-    margin-bottom: 3em;
+    margin-bottom: 60px;
 }
 
 .post-img {
@@ -298,19 +297,19 @@ hr {
 }
 
 .post-block h3 {
-    font-size: 1.21vw;
+    font-size: 20px;
 }
 
 .post-data, .post-author {
     display: inline-block;
     margin-right: 1.93%;
-    font-size: 0.724vw;
+    font-size: 12px;
     margin-bottom: 9.67%;
 }
 
 p {
     margin-top: 0px;
-    font-size: 0.91vw;
+    font-size: 14px;
 }
 
 
@@ -324,7 +323,7 @@ p {
 
 .posts-list-item {
     display: flex;
-    margin-bottom: 1.25em;
+    margin-bottom: 20px;
 }
 
 .posts-list-img {
@@ -365,51 +364,51 @@ h4 {
 
 .content-search {
     display: flex;
-    margin-top: 3em;
-    margin-bottom: 3em;
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
 
 .field {
     padding-left: 8.8%;
     border: none;
     background-color: #f5f7f6;
-    font-size: 0.81vw;
+    font-size: 14px;
 }
 
 .field-search {
-    width: calc(100% - 3.4em);
+    width: calc(100% - 45px);
 }
 
 .field-search:focus {
-    margin-right: 0.07em;
+    margin-right: 1px;
 }
 
 .field-mail {
     width: 100%;
-    height: 3.4em;
+    height: 45px;
     box-sizing: border-box;
 }
 
 .btn-search {
     background-image: url("../svg/search.svg");
-    width: 3.4em;
-    height: 3.4em;
+    width: 45px;
+    height: 45px;
     background-color: #ae9e5f;
-    padding: 0.38em;
+    padding: 15px;
     background-size: 40%;
     background-repeat: no-repeat;
     background-position: center;
     border: none;  
-    font-size: 0.81vw;  
+    font-size: 14px;  
 }
 
 .btn-mail {
     background-color: #ae9e5f;
     width: 100%;
-    height: 3.4em;
-    margin-top: 1.07em;
+    height: 45px;
+    margin-top: 15px;
     font-weight: bold;
-    font-size: 0.87vw;
+    font-size: 14px;
     border: none;
     color: inherit;
     text-transform: uppercase;
@@ -420,15 +419,15 @@ h4 {
 }
 
 .content-mail, .content-tags {
-    margin-bottom: 3em;
+    margin-bottom: 60px;
 }
 
 .content-tags span {
     color: black;
-    font-size: 0.75vw;
+    font-size: 12px;
     font-weight: bold;
-    border: 0.25em solid #ededed;
-    padding: 0.41em 1.25em;
+    border: 3px solid #ededed;
+    padding: 5px 15px;
     display: inline-block;
-    margin-top: 0.41em;
+    margin-top: 5px;
 }
