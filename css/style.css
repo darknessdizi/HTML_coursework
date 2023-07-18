@@ -29,6 +29,37 @@ body {
     position: relative;
     padding: 30px 15% 0px;
     min-width: 985px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 450px;
+    box-sizing: border-box;
+    background-color: black;
+    background-image: url("../images/banner-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    z-index: 0;
+    
+}
+
+
+
+
+
+
+
+
+
+
+/* +++++++++++++++++ */
+.navigation {
+    position: relative;
+    padding: 30px 15% 0px;
+    min-width: 985px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
     height: 450px;
     box-sizing: border-box;
     background-color: black;
