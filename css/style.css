@@ -270,8 +270,12 @@ h1 {
 }
 
 .post-tag-link {
-    color: inherit;
+    color: #b59f5b;
     text-decoration: none;
+}
+
+.post-tag-link:hover {
+    text-decoration: underline;
 }
 
 .post-title-link {
@@ -300,7 +304,7 @@ p {
     font-size: 14px;
 }
 
-/* Вторая колонка */
+/* Вторая колонка (news) */
 
 .news-conteiner {
     width: 23%;
@@ -335,41 +339,148 @@ p {
 .news-list-item {
     display: flex;
     margin-bottom: 20px;
+    font-size: 14px;
 }
 
-.posts-list-img {
+.news-list-img {
     width: 25%;
     height: 100%;
 }
 
-.posts-list-text {
+.news-list-text {
     padding-left: 5.5%;
     box-sizing: border-box;
     width: 75%;
     margin-top: -4px;
 }
 
+.news-list-text span {
+    color: #a0a0a0;
+    text-transform: none;
+    font-size: 12px;
+}
 
+h4 {
+    font-size: 0.875vw;
+    font-size: 14px;
+    color: black;
+    margin-top: 0.14em;
+    margin-bottom: 0px;
+    line-height: 1;
+}
 
+.news-search {
+    display: flex;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
 
+.news-field {
+    padding-left: 8.8%;
+    border: none;
+    background-color: #f5f7f6;
+    font-size: 14px;
+}
 
+.news-field-search {
+    width: calc(100% - 45px);
+}
 
+.news-field-search:focus {
+    margin-right: 1px;
+    outline: none;
+}
 
+.news-field-mail {
+    width: 100%;
+    height: 45px;
+    box-sizing: border-box;
+}
 
+.news-field-mail:focus {
+    outline: none;
+}
 
+.news-field-search:hover, .news-field-mail:hover {
+    margin-right: 1px;
+    border: 1px solid #ae9e5f;
+}
 
+.news-btn-search {
+    background-image: url("../svg/search.svg");
+    width: 45px;
+    height: 45px;
+    background-color: #ae9e5f;
+    padding: 15px;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;  
+    font-size: 14px;  
+}
 
+.news-btn-mail {
+    background-color: #ae9e5f;
+    width: 100%;
+    height: 45px;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 14px;
+    border: none;
+    color: inherit;
+    text-transform: uppercase;
+}
 
+.news-btn-search:hover, .news-btn-mail:hover {
+    background-color: black;
+}
 
+.news-mail, .news-tags {
+    margin-bottom: 60px;
+}
 
+.news-tag-link {
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+    border: 3px solid #ededed;
+    padding: 5px 15px;
+    display: inline-block;
+    margin-top: 5px;
+    text-decoration: none;
+}
+
+.news-tag-link:hover {
+    border-color: #ae9e5f;
+}
+
+.news-themes-link {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    padding: 18px 0px 18px 0px;
+    border-bottom: 2px solid #eeeeee;
+}
+
+.news-themes-link:hover {
+    color: #ae9e5f;
+}
+
+sup {
+    font-size: 12px; 
+    color: #ae9e5f;
+    font-weight: bold;
+}
+
+/* Раздел наши изделия */
 
 .goods-title {
     text-align: center;
 }
 
-
-
-.title-line::after {
+.goods-title-line::after {
     content: '';
     display: block;
     margin-top: 10px;
@@ -381,16 +492,87 @@ p {
     margin-right: auto;
 }
 
-
-
-.tag-link {
-    margin-right: 7%;
+.goods-content {
+    width: 1200px;
+    display: flex;
+    margin: 0px auto;
+    justify-content: space-between;
 }
 
-.tag-link:hover {
+.good-post {
+    width: 350px;
+    height: 435px;
+    position: relative;
+}
+
+.good-img {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.good-text {
+    min-height: 265px;
+    box-sizing: border-box;
+    position: absolute;
+    padding: 50px 20px 0px 20px;
+    border: 4px solid rgba(174, 158, 95, 0.6);
+    bottom: 0px;
+}
+
+.good-text p {
+    color: black;
+    font-size: 15px;
+    text-transform: none;
+}
+
+.good-link-item {
+    color: #ae9e5f;
+    text-decoration: none;
+}
+
+.good-link-item:hover {
     text-decoration: underline;
-    text-decoration-color: #ddd7c2;
 }
+
+.good-shop {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.good-price {
+    color: black;
+}
+
+.price-delete {
+    display: block;
+    text-decoration: line-through;
+    font-size: 14px;
+    min-height: 19px;
+}
+
+.price-now {
+    font-size: 20px;
+}
+
+button {
+    color: white;
+    background-color: #ae9e5f;
+    border-color: #ae9e5f;
+    width: 140px;
+    height: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    border-style: none;
+}
+
+button:hover {
+    background-color: black;
+}
+
+/* Раздел подвала  */
 
 .end-block {
     color: black;
@@ -434,213 +616,4 @@ p {
 .end-block-text {
     display: block;
     margin-bottom: 40px;
-}
-
-
-/* вторая колонка */
-
-/* .posts-news {
-    width: 23%;
-    min-width: 270px;
-}
-
-.posts-news-title h3{
-    font-size: 14px;
-    text-align: center;
-}
-
-.posts-list-item {
-    display: flex;
-    margin-bottom: 20px;
-}
-
-.posts-list-img {
-    width: 25%;
-    height: 100%;
-}
-
-.posts-list-text {
-    padding-left: 5.5%;
-    box-sizing: border-box;
-    width: 75%;
-    margin-top: -4px;
-} */
-
-.posts-list-text span {
-    color: #a0a0a0;
-    text-transform: none;
-    /* font-size: 0.75vw; */
-    font-size: 12px;
-}
-
-h4 {
-    /* font-size: 0.875vw; */
-    font-size: 14px;
-    color: black;
-    margin-top: 0.14em;
-    margin-bottom: 0px;
-    line-height: 1;
-}
-
-/* .posts-link  {
-    text-decoration: none;
-}
-
-.posts-link:hover h4 {
-    color: #ae9e5f;
-}  */
-
-.content-search {
-    display: flex;
-    margin-top: 60px;
-    margin-bottom: 60px;
-}
-
-.field {
-    padding-left: 8.8%;
-    border: none;
-    background-color: #f5f7f6;
-    font-size: 14px;
-}
-
-.field-search {
-    width: calc(100% - 45px);
-}
-
-.field-search:focus {
-    margin-right: 1px;
-    /* border: 1px solid #ae9e5f; */
-    /* border-color: #ae9e5f; */
-}
-
-.field-mail {
-    width: 100%;
-    height: 45px;
-    box-sizing: border-box;
-}
-
-.field-search:hover, .field-mail:hover {
-    margin-right: 1px;
-    border: 1px solid #ae9e5f;
-    /* border-color: #ae9e5f; */
-}
-
-.btn-search {
-    background-image: url("../svg/search.svg");
-    width: 45px;
-    height: 45px;
-    background-color: #ae9e5f;
-    padding: 15px;
-    background-size: 40%;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: none;  
-    font-size: 14px;  
-}
-
-.btn-mail {
-    background-color: #ae9e5f;
-    width: 100%;
-    height: 45px;
-    margin-top: 15px;
-    font-weight: bold;
-    font-size: 14px;
-    border: none;
-    color: inherit;
-    text-transform: uppercase;
-}
-
-.btn-search:hover, .btn-mail:hover {
-    /* opacity: 0.9; */
-    background-color: black;
-}
-
-.content-mail, .content-tags {
-    margin-bottom: 60px;
-}
-
-.content-tags span {
-    color: black;
-    font-size: 12px;
-    font-weight: bold;
-    border: 3px solid #ededed;
-    padding: 5px 15px;
-    display: inline-block;
-    margin-top: 5px;
-}
-
-
-.goods-content {
-    width: 1200px;
-    display: flex;
-    margin: 0px auto;
-    justify-content: space-between;
-}
-
-.good-post {
-    width: 350px;
-    height: 435px;
-    position: relative;
-}
-
-.good-img {
-    width: 300px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.good-text {
-    min-height: 265px;
-    box-sizing: border-box;
-    position: absolute;
-    padding: 50px 20px 0px 20px;
-    border: 4px solid rgba(174, 158, 95, 0.6);
-    bottom: 0px;
-}
-
-.good-text p {
-    color: black;
-    font-size: 15px;
-    text-transform: none;
-}
-
-.good-text a {
-    color: #ae9e5f;
-}
-
-.good-shop {
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
-    font-weight: bold;
-}
-
-.good-price {
-    color: black;
-}
-
-.price-delete {
-    display: block;
-    text-decoration: line-through;
-    font-size: 14px;
-    min-height: 19px;
-}
-
-.price-now {
-    font-size: 20px;
-}
-
-button {
-    color: white;
-    background-color: #ae9e5f;
-    border-color: #ae9e5f;
-    width: 140px;
-    height: 50px;
-    font-size: 14px;
-    font-weight: bold;
-    border-style: none;
-}
-
-button:hover {
-    background-color: black;
 }
