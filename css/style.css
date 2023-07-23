@@ -501,7 +501,7 @@ sup {
     margin-right: auto;
 }
 
-.goods-content {
+.goods-conteiner {
     width: 1200px;
     display: flex;
     margin: 0px auto;
@@ -510,11 +510,6 @@ sup {
 
 .good-post {
     width: 350px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    box-sizing: border-box;
     position: relative;
 }
 
@@ -525,32 +520,38 @@ sup {
     top: 170px;
     bottom: 0px;
     border: 4px solid rgba(174, 158, 95, 0.6);
+    z-index: -1;
 }
 
-.good-img {
+.good-post-content {
     width: 300px;
     margin-left: auto;
     margin-right: auto;
     font-size: 0px;
 }
 
+.good-post-content img {
+    position: relative;
+    z-index: -1;
+}
+
 .good-post-title {
     margin-top: 20px;
 }
 
-.good-img p {
+.good-post-content p {
     color: black;
     font-size: 15px;
     text-transform: none;
     margin-bottom: 0px;
 }
 
-.good-link-item {
+.good-post-link {
     color: #ae9e5f;
     text-decoration: none;
 }
 
-.good-link-item:hover {
+.good-post-link:hover {
     text-decoration: underline;
 }
 
@@ -559,7 +560,6 @@ sup {
     display: flex;
     justify-content: space-between;
     font-weight: bold;
-    width: 300px;
 }
 
 .good-price {
@@ -641,6 +641,7 @@ button:hover {
 }
 
 
+/* символ рубля */
 
 .rub {
     vertical-align: middle;
