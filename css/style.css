@@ -536,7 +536,7 @@ sup {
 }
 
 .good-post-title {
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 .good-post-content p {
@@ -556,7 +556,7 @@ sup {
 }
 
 .good-shop {
-    margin: 20px auto;
+    margin: 25px auto;
     display: flex;
     justify-content: space-between;
     font-weight: bold;
@@ -609,6 +609,7 @@ button:hover {
     margin: 60px auto 70px;
     background-color: #f5f7f6;
     padding: 30px;
+    box-sizing: border-box;
 }
 
 .end-svg-dribbble {
@@ -639,7 +640,6 @@ button:hover {
     margin-bottom: 40px;
     color: #999999;
 }
-
 
 /* символ рубля */
 
