@@ -23,6 +23,7 @@ body {
     font-family: OpenSans, Arial, sans-serif;
     color: white;
     text-transform: uppercase;
+    /* position: relative; */
 }
 
 h3 {
@@ -32,13 +33,6 @@ h3 {
 }
 
 /* Раздел навигации (header) */
-
-/* .navigation-conteiner {
-    min-width: 1000px;
-    max-width: 1660px;
-    margin-left: auto;
-    margin-right: auto;
-} */
 
 .navigation-background {
     background-color: black;
@@ -146,7 +140,6 @@ h1 {
 .trend-post {
     position: relative;
     width: 414px;
-    /* min-width: 248.5px; */
 }
 
 .trend-post:nth-child(n+2) {
@@ -444,33 +437,48 @@ h4 {
     background-color: black;
 }
 
-.news-mail, .news-tags {
+.news-mail {
     margin-bottom: 60px;
+}
+
+.news-tags-list {
+    margin: 0px 0px 60px;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0px;
+}
+
+.news-tags-list-item {
+    display: inline-block;
 }
 
 .news-tag-link {
     color: black;
-    font-size: 12px;
-    font-weight: bold;
-    border: 3px solid #ededed;
-    padding: 5px 15px;
-    display: inline-block;
-    margin-top: 5px;
     text-decoration: none;
+    margin-top: 5px;
+    padding: 5px 15px;
+    display: block;
+    border: 3px solid #ededed;
 }
 
 .news-tag-link:hover {
     border-color: #ae9e5f;
 }
 
+.news-themes-list {
+    font-weight: bold;
+}
+
+.news-themes-list-item {
+    display: block;
+    padding: 18px 0px 18px 0px;
+    border-bottom: 2px solid #eeeeee;
+}
+
 .news-themes-link {
     text-decoration: none;
     color: black;
     font-size: 14px;
-    font-weight: bold;
-    display: block;
-    padding: 18px 0px 18px 0px;
-    border-bottom: 2px solid #eeeeee;
 }
 
 .news-themes-link:hover {
@@ -480,7 +488,6 @@ h4 {
 sup {
     font-size: 12px; 
     color: #ae9e5f;
-    font-weight: bold;
 }
 
 /* Раздел наши изделия */
@@ -652,6 +659,136 @@ button:hover {
     font-size: 14px;
 }
 
-/* .good-price-now::after {
-    content: " \20BD";
-} */
+/* раздел popup */
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.popup-active {
+    display: block;
+}
+
+.popup-close {
+    width: 15px;
+    height: 15px;
+    background-image: url("../svg/form-x.svg");
+    position: absolute;
+    right: 0;
+    top: -20px;
+}
+
+.popup-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 390px;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    color: black;
+}
+
+.popup-conteiner {
+    padding: 50px 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-transform: none;
+    font-weight: 400;
+}
+
+.popup-title {
+    text-align: center;
+}
+
+.popup-title-line::after {
+    content: '';
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    border: solid #dfd8bf;
+    border-width: 3px 0px 0px;
+    width: 65px;   
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#login-to-the-site {
+    border: none;
+    width: 100%;
+    height: 3em;
+    margin-top: 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url("../svg/form-arrows.svg") no-repeat right 10px center #f3f7f6;
+    background-size: 3%;
+    padding-left: 20px;
+    color: #7f8180;
+} 
+
+#login-to-the-site:focus {
+    outline: none;
+}
+
+.form-hint {
+    display: block;
+    font-size: 14px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.radio {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("../svg/form-empty-circle.svg");
+    width: 15px;
+    height: 15px;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.radio:checked {
+    
+    background-image: url("../svg/form-circle.svg");
+}
+
+.form-hint-button label:nth-child(2) {
+    margin-left: 15px;
+}
+
+.radio-group-text {
+    font-size: 14px;
+}
+
+.area {
+    width: 100%;
+    box-sizing: border-box;
+    height: 130px;
+    resize: none;
+    border: none;
+    background-color: #f3f7f6;
+    padding: 20px;
+}
+
+.area:focus {
+    outline: none;
+}
+
+.popup-form-button {
+    margin-top: 25px;
+    height: 3em;
+}
+
+.popup-button {
+    width: 100%;
+}

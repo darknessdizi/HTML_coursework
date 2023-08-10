@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -35,7 +35,7 @@
             <h3>Сейчас в тренде</h3>
         </div>
         <div class="trend-content">
-            <arcticle class="trend-post">
+            <div class="trend-post">
                 <img class="trend-post-img" src="images/trend1.jpg" alt="">
                     <div class="trend-text">
                         <ul class="trend-tags">
@@ -50,8 +50,8 @@
                             </a>
                         </h3>
                     </div>
-            </arcticle>
-            <arcticle class="trend-post">
+            </div>
+            <div class="trend-post">
                 <img class="trend-post-img" src="images/trend2.jpg" alt="">
                     <div class="trend-text">
                         <ul class="trend-tags">
@@ -63,8 +63,8 @@
                             </a>
                         </h3>
                     </div>
-            </arcticle>
-            <arcticle class="trend-post">
+            </div>
+            <div class="trend-post">
                 <img class="trend-post-img" src="images/trend3.jpg" alt="">
                     <div class="trend-text">
                         <ul class="trend-tags">
@@ -77,8 +77,8 @@
                             </a>
                         </h3>
                     </div>
-            </arcticle>
-            <arcticle class="trend-post">
+            </div>
+            <div class="trend-post">
                 <img class="trend-post-img" src="images/trend4.jpg" alt="">
                     <div class="trend-text">
                         <ul class="trend-tags">
@@ -91,7 +91,7 @@
                             </a>
                         </h3>
                     </div>
-            </arcticle>
+            </div>
         </div>
     </aside>
     
@@ -305,25 +305,53 @@
             <div class="news-title">
                 <h3>теги</h3>
             </div>
-            <div class="news-tags">
-                <a href="#0" class="news-tag-link">fashion</a>
-                <a href="#0" class="news-tag-link">music</a>
-                <a href="#0" class="news-tag-link">lifestyle</a>
-                <a href="#0" class="news-tag-link">art</a>
-                <a href="#0" class="news-tag-link">interior</a>
-                <a href="#0" class="news-tag-link">travel</a>
-                <a href="#0" class="news-tag-link">food</a>
-                <a href="#0" class="news-tag-link">health</a>
-            </div>
+            <ul class="news-tags-list">
+                <li class="news-tags-list-item">
+                    <a href="#0" class="news-tag-link">fashion</a>
+                </li>
+                <li class="news-tags-list-item">
+                    <a href="#0" class="news-tag-link">music</a></li>
+                <li class="news-tags-list-item">
+                    <a href="#0" class="news-tag-link">lifestyle</a>
+                </li>
+                <li class="news-tags-list-item">
+                    <a href="#0" class="news-tag-link">art</a>
+                </li>
+                <li class="news-tags-list-item">
+                    <a href="#0" class="news-tag-link">interior</a>
+                </li>
+                <li class="news-tags-list-item">
+                    <a href="#0" class="news-tag-link">travel</a>
+                </li>
+                <li class="news-tags-list-item">
+                    <a href="#0" class="news-tag-link">food</a>
+                </li>
+                <li class="news-tags-list-item">
+                    <a href="#0" class="news-tag-link">health</a>
+                </li>
+            </ul>
             <div class="news-title">
                 <h3>темы</h3>
             </div>
-            <a href="#0" class="news-themes-link">Красота <sup>12</sup></a>
-            <a href="#0" class="news-themes-link">Здоровье <sup>4</sup></a>
-            <a href="#0" class="news-themes-link">Образ жизни <sup>145</sup></a>
-            <a href="#0" class="news-themes-link">Музыка <sup>28</sup></a>
-            <a href="#0" class="news-themes-link">Спорт <sup>62</sup></a>
-            <a href="#0" class="news-themes-link">Йога <sup>8</sup></a>
+            <ul class="news-themes-list">
+                <li class="news-themes-list-item">
+                    <a href="#0" class="news-themes-link">Красота <sup>12</sup></a>
+                </li>
+                <li class="news-themes-list-item">
+                    <a href="#0" class="news-themes-link">Здоровье <sup>4</sup></a></li>
+                <li class="news-themes-list-item">
+                    <a href="#0" class="news-themes-link">Образ жизни <sup>145</sup></a>
+                </li>
+                <li class="news-themes-list-item">
+                    <a href="#0" class="news-themes-link">Музыка <sup>28</sup></a>
+                </li>
+                <li class="news-themes-list-item">
+                    <a href="#0" class="news-themes-link">Спорт <sup>62</sup></a>
+                </li>
+                <li class="news-themes-list-item">
+                    <a href="#0" class="news-themes-link">Йога <sup>8</sup></a>
+                </li>
+            </ul>
         </div>  
     </main>
 
@@ -399,6 +427,46 @@
         </div>
         <span class="end-block-text">Copyright © 2009–2019 City Blog LLC.</span>
     </footer>
+
+    <div class="popup popup-active">
+        <div class="popup-form">
+            <div class="popup-close">
+            </div>
+            <div class="popup-conteiner">
+                <div class="popup-content">
+                    <div class="popup-title">
+                        <h3 class="popup-title-line">ВАШ ФИДБЕК</h3>
+                    </div>
+                    <label class="popup-form-hint" for="login-to-the-site">
+                        Как часто вы заходите на сайт?
+                    </label>
+                    <select name="login-to-the-site" id="login-to-the-site">
+                        <option value="often">Почти каждый день</option>
+                        <option value="not-often">Редко</option>
+                    </select>
+                    <span class="form-hint">Вы подписаны на e-mail рассылку?</span>
+                    <div class="form-hint-button">
+                        <label class="radio-group">
+                            <input type="radio" class="radio" name="radio-group">
+                            <span class="radio-group-text">Да</span>
+                        </label>
+                        <label class="radio-group">
+                            <input type="radio" class="radio" name="radio-group">
+                            <span class="radio-group-text">Нет</span>
+                        </label>
+                    </div>
+                    <label class="popup-form-area">
+                        <span class="form-hint">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+                        <textarea class="area" placeholder="Может, больше рецептов?"></textarea>
+                    </label>
+                </div>
+            
+                <div class="popup-form-button">
+                    <button class="popup-button">Отправить</button>
+                </div>
+            </div>
+        </div>
+    </div>
       
 </body>
 </html>
