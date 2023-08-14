@@ -23,7 +23,6 @@ body {
     font-family: OpenSans, Arial, sans-serif;
     color: white;
     text-transform: uppercase;
-    /* position: relative; */
 }
 
 h3 {
@@ -58,7 +57,7 @@ h3 {
 .navigation-content {
     position: relative;
     height: 450px;
-    max-width: 1200px;
+    width: 1200px;
     margin: 0px auto;
 }
 
@@ -66,7 +65,8 @@ h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 15px 0px;
+    /* padding: 25px 15px 0px; */
+    padding-top: 25px;
 }
 
 .navigation-link-logo {
@@ -74,6 +74,10 @@ h3 {
     height: 40px;
     background-image: url("../svg/noemi-logo.svg");
     background-repeat: no-repeat;
+}
+
+.hamburger-menu {
+    display: none;
 }
 
 .navigation-list {
@@ -537,6 +541,14 @@ sup {
     font-size: 0px;
 }
 
+.good-post-img-desk {
+    display: block;
+}
+
+.good-post-img-tablet, .good-post-img-mobile {
+    display: none;
+}
+
 .good-post-content img {
     position: relative;
     z-index: -1;
@@ -792,3 +804,374 @@ button:hover {
 .popup-button {
     width: 100%;
 }
+
+@media (min-width: 641px) and (max-width: 1320px) {
+    .navigation-background {
+        background-image: url("../images/banner-bg-tablet.jpg");  
+        background-position: bottom;
+    }
+    
+    .navigation-content {
+        width: 697px;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .navigation-list {
+        display: none;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+    
+    .trend-content {
+        flex-wrap: wrap;
+    }
+    
+    .trend-post {
+        width: 49.8%;
+        margin-bottom: 4px;
+    }
+
+    .trend-post-title-link {
+        font-size: 17px;
+    }
+
+    .trend-post:nth-child(n+2) {
+        margin-left: 0px;
+    }
+
+    .posts-conteiner {
+        width: 768px;
+        min-width: 768px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .posts-content {
+        width: 50.7%;
+        min-width: 390px;
+    }
+
+    .news-conteiner {
+        min-width: 270px;
+    }
+
+    .post {
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+    }
+
+    .post-img {
+        width: 100%;
+    }
+
+    .post-title-link {
+        font-size: 17px;
+    }
+
+    .post-block {
+        width: 100%;
+        padding: 10px 0px 0px;
+    }
+
+    .post-data, .post-author {
+        margin-bottom: 30px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .post:after {
+        content: '';
+        display: block;
+        margin-top: 10px;
+        border: solid #eeeeee;
+        border-width: 3px 0px 0px;
+        width: 100%;
+    }
+
+    .post:last-child:after {
+        content: '';
+        display: none;
+    }
+
+    .news-themes-list {
+        padding-inline-start: 0px;
+        text-transform: none;
+    }
+
+    .news-themes-list-item {
+        padding: 12px 0px;
+    }
+
+    .goods-conteiner {
+        width: 697px;
+        flex-wrap: wrap;
+    }
+
+    .good-post {
+        width: 335px;
+        position: relative;
+        margin-bottom: 25px;
+    }
+
+    .good-post-content {
+        width: 292px;
+    }
+
+    .good-post-img-tablet {
+        display: block;
+    }
+
+    .good-post-img-desk, .good-post-img-mobile {
+        display: none;
+    }
+
+    .good-post-border {
+        top: 193px;
+    }
+
+    .end-svg-objects {
+        width: 697px;
+    }
+}
+
+@media (max-width: 640px) {
+    .navigation-background {
+        background-image: url("../images/banner-mobile.jpg");  
+    }
+    
+    .navigation-content {
+        width: 330px;
+        height: 638px;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .navigation-list {
+        display: none;
+    }
+
+    h1 {
+        font-size: 26px;
+        width: 330px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+    
+    .trend-content {
+        flex-wrap: wrap;
+    }
+    
+    .trend-post {
+        width: 100%;
+        margin-bottom: 4px;
+    }
+
+    .trend-post-title-link {
+        font-size: 16px;
+    }
+
+    .trend-post:nth-child(n+2) {
+        margin-left: 0px;
+    }
+
+    .posts-conteiner {
+        width: 330px;
+        min-width: 330px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .posts-content {
+        width: 100%;
+        min-width: 100%;
+    }
+
+    .news-conteiner {
+        min-width: 330px;
+    }
+
+    .post {
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+    }
+
+    .post-img {
+        width: 100%;
+    }
+
+    .post-title-link {
+        font-size: 16px;
+    }
+
+    .post-block {
+        width: 100%;
+        padding: 10px 0px 0px;
+    }
+
+    .post-data, .post-author {
+        margin-bottom: 30px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .post:after {
+        content: '';
+        display: block;
+        margin-top: 10px;
+        border: solid #eeeeee;
+        border-width: 3px 0px 0px;
+        width: 100%;
+    }
+
+    .news-title h3 {
+        font-size: 16px;
+    }
+
+    .news-themes-list {
+        padding-inline-start: 0px;
+        text-transform: none;
+    }
+
+    .news-themes-list-item {
+        padding: 12px 0px;
+    }
+
+    .goods-conteiner {
+        width: 330px;
+        flex-wrap: wrap;
+    }
+
+    .good-post {
+        width: 335px;
+        position: relative;
+        margin-bottom: 25px;
+    }
+
+    .good-post-content {
+        width: 292px;
+    }
+
+    .good-post-img-mobile {
+        display: block;
+    }
+
+    .good-post-img-desk, .good-post-img-tablet {
+        display: none;
+    }
+
+    .good-post-border {
+        top: 250px;
+    }
+
+    .end-svg-objects {
+        width: 330px;
+    } 
+}
+
+
+
+
+
+/* ////////////////////////////////////////////////////////////////////// */
+/* скрываем чекбокс */
+#menu__toggle {
+    opacity: 0;
+  }
+  /* стилизуем кнопку */
+  .menu__btn {
+    display: flex; /* используем flex для центрирования содержимого */
+    /* центрируем содержимое кнопки */
+    /* align-items: center;   */
+    
+    /* position: absolute;
+    top: 20px;
+    right: 20px; */
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  /* добавляем "гамбургер" */
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    /* width: 100%; */
+    right: 0px;
+    width: 26px;
+    height: 2px;
+    background-color: #f3f7f6;
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+  }
+
+  /* контейнер меню */
+/* .menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #ECEFF1;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  } */
+  /* элементы меню */
+  /* .menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .menu__item:hover {
+    background-color: #CFD8DC;
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+  } */
