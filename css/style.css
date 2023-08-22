@@ -804,14 +804,21 @@ button:hover {
     width: 100%;
 }
 
-@media (min-width: 641px) and (max-width: 1320px) {
+@media (min-width: 1200px) and (max-width: 1320px) {
+    .trend-post-title {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 697px) and (max-width: 1199px) {
     .navigation-background {
         background-image: url("../images/banner-bg-tablet.jpg");  
         background-position: bottom;
     }
     
-    .navigation-content {
-        width: 697px;
+    .navigation-content, h1 {
+        max-width: 697px;
+        width: 90%;
     }
 
     .hamburger-menu {
@@ -848,10 +855,10 @@ button:hover {
     }
 
     .posts-conteiner {
-        width: 768px;
-        min-width: 768px;
+        width: 697px;
+        min-width: 697px;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
 
     .posts-content {
@@ -944,7 +951,7 @@ button:hover {
     }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 696px) {
     .navigation-background {
         background-image: url("../images/banner-mobile.jpg");  
     }
